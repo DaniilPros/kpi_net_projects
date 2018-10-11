@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Lab1.Model.ElementTypes
+namespace Lab1.Model.ElementTypes.HtmlElements
 {
-    public class H1Parser:IElementParser
+    public class H3HtmlParser:IElementParser
     {
         public string ParseLines(List<string> lines)
         {
@@ -17,7 +17,7 @@ namespace Lab1.Model.ElementTypes
                 result += $"{lines[0]}<br>";
                 lines.RemoveAt(0);
             }
-            return $"<h1>{result}</h2>";
+            return $"<h3>{result}</h3>";
         }
     }
 }

@@ -1,8 +1,9 @@
+using System;
 using System.Collections.Generic;
 
-namespace Lab1.Model.ElementTypes
+namespace Lab1.Model.ElementTypes.MarkdownParser
 {
-    public class BulListParser:IElementParser
+    public class BulListMarkdownParser:IElementParser
     {
         public string ParseLines(List<string> lines)
         {
@@ -10,10 +11,10 @@ namespace Lab1.Model.ElementTypes
             var result = "";
             while (lines.Count>0&&!string.IsNullOrEmpty(lines[0]))
             {
-                result += $"<li>{lines[0]}</li>";
+                result += $"* {lines[0]} {Environment.NewLine}";
                 lines.RemoveAt(0);
             }
-            return $"<ol>{result}</ol>";
+            return $"{result}";
         }
     }
 }

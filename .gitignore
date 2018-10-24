@@ -4,3 +4,8 @@ Lab1/Lab1/bin/
 Lab1.Framwork/.vs/
 Lab1.Framwork/Lab1.Framwork/bin/
 Lab1.Framwork/Lab1.Framwork/obj/
+Labs/.vs/
+Labs/.idea/
+*/bin/*
+*/*/bin/*
+*/*/obj/*

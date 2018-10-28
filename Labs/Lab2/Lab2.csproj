@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5CA40359-18BB-4B2E-A06B-2CABDB749E28}</ProjectGuid>
+    <ProjectGuid>{97B77749-855D-4A8D-BC48-59C7C3633BB5}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Lab2</RootNamespace>
@@ -31,11 +31,29 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <PropertyGroup>
-    <StartupObject />
-  </PropertyGroup>
   <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ArmyComposite.cs" />
+    <Compile Include="ArmyUnit.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Soldiers\Kentavr.cs" />
+    <Compile Include="Soldiers\Ciklop.cs" />
+    <Compile Include="Soldiers\Dragon.cs" />
+    <Compile Include="Soldiers\Elf.cs" />
+    <Compile Include="Soldiers\Gidra.cs" />
+    <Compile Include="Soldiers\Knight.cs" />
+    <Compile Include="Soldiers\Minotavr.cs" />
+    <Compile Include="Soldiers\Ork.cs" />
+    <Compile Include="Soldiers\Soldier.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Lab2.ArmyComposite">
+    <Position X="2.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAAAAAATAAYAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ArmyComposite.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lab2.ArmyUnit">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ArmyUnit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lab2.Program">
+    <Position X="4.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lab2.Soldiers.Ciklop">
+    <Position X="8.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Soldiers\Ciklop.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lab2.Soldiers.Dragon">
+    <Position X="2.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Soldiers\Dragon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lab2.Soldiers.Elf">
+    <Position X="4.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Soldiers\Elf.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lab2.Soldiers.Gidra">
+    <Position X="7.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Soldiers\Gidra.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lab2.Soldiers.Kentavr">
+    <Position X="9.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Soldiers\Kentavr.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lab2.Soldiers.Knight">
+    <Position X="3.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Soldiers\Knight.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lab2.Soldiers.Minotavr">
+    <Position X="5.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Soldiers\Minotavr.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lab2.Soldiers.Ork">
+    <Position X="6.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Soldiers\Ork.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lab2.Soldiers.Soldier">
+    <Position X="10.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAgAAAAAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>Soldiers\Soldier.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Consolas" Size="9.75" />
+</ClassDiagram>

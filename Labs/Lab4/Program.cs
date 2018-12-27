@@ -25,7 +25,8 @@ namespace Lab4
 
             Console.WriteLine(Environment.NewLine + "Task2:");
             Console.WriteLine("Get items grouped by fabric name");
-            var items2 = manager.Storages.Aggregate(new List<Item>(), (r, c) => r.Concat(c.Items).ToList()).GroupBy(i=>i.FabricName,i=>i,(key,g)=>new {Fabric = key,Items = g.ToList()});
+            var items2 = manager.Storages.Aggregate(new List<Item>(), (r, c) => r.Concat(c.Items).ToList())
+                .GroupBy(i=>i.FabricName,i=>i,(key,g)=>new {Fabric = key,Items = g.ToList()});
             foreach (var x1 in items2)
             {
                 Console.WriteLine(x1.Fabric);
@@ -48,13 +49,15 @@ namespace Lab4
 
             Console.WriteLine(Environment.NewLine + "Task4:");
             Console.WriteLine("Get all items where price is more than 10");
-            var items4 = manager.Storages.Aggregate(new List<Item>(), (r, c) => r.Concat(c.Items).ToList()).Where(item=>item.Price>10);
+            var items4 = manager.Storages.Aggregate(new List<Item>(), (r, c) => r.Concat(c.Items).ToList())
+                .Where(item=>item.Price>10);
             foreach (var item in items4)
                 Console.WriteLine(item);
 
             Console.WriteLine(Environment.NewLine + "Task5:");
             Console.WriteLine("Get all items where count is more than 2, sorted by date");
-            var items5 = manager.Storages.Aggregate(new List<Item>(), (r, c) => r.Concat(c.Items).ToList()).Where(item => item.Count > 2);
+            var items5 = manager.Storages.Aggregate(new List<Item>(), (r, c) => r.Concat(c.Items).ToList())
+                .Where(item => item.Count > 2);
             items1.Sort(new DateComparer());
             foreach (var item in items5)
                 Console.WriteLine(item);

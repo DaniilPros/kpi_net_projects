@@ -9,3 +9,7 @@ Labs/.idea/
 */bin/*
 */*/bin/*
 */*/obj/*
+Test/Test/.vs/
+Test/Test/packages/
+Test/Test/Test/bin/
+Test/Test/Test/obj/

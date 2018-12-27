@@ -18,7 +18,9 @@ namespace Lab5
                                             + "Integrated Security=true";
 
             OutputAllUsers(connectionString);
-            EditUsers(connectionString,"Dan1",1);
+            Console.WriteLine("InputName: ");
+            var name = Console.ReadLine();
+            EditUsers(connectionString,name,1);
             OutputAllUsers(connectionString);
             EditUsers(connectionString, "Dan", 1);
             OutputAllUsers(connectionString);
@@ -26,7 +28,7 @@ namespace Lab5
             OutputAllUsers(connectionString);
             RemoveUser(connectionString, 10);
             OutputAllUsers(connectionString);
-
+            OutputAllOrders(connectionString);
             Console.ReadLine();
 
 
@@ -52,15 +54,6 @@ namespace Lab5
                 connection.Open();
                 dataAdpater.DeleteCommand.ExecuteNonQuery();
                 connection.Close();
-                //var categoryTable = new DataSet();
-                //dataAdpater.Fill(categoryTable);
-
-                //foreach (DataRow row in categoryTable.Tables["Table"].Rows)
-                //{
-                //    row.Delete();
-                //}
-
-                //dataAdpater.Update(categoryTable);
             }
         }
 
@@ -151,6 +144,41 @@ namespace Lab5
                     {
                         Console.WriteLine("\t{0}\t{1}\t{2}",
                             reader[0], reader[1], reader[2]);
+                    }
+
+                    reader.Close();
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+                Console.WriteLine("");
+
+            }
+        }
+
+        private static void OutputAllOrders(string connectionString)
+        {
+            Console.WriteLine("All orders");
+            using (var connection =
+                new SqlConnection(connectionString))
+            {
+                // Provide the query string with a parameter placeholder.
+                const string queryString = "SELECT * from dbo.orders where clientId = 1";
+                // Create the Command and Parameter objects.
+                var command = new SqlCommand(queryString, connection);
+
+                // Open the connection in a try/catch block. 
+                // Create and execute the DataReader, writing the result
+                // set to the console window.
+                try
+                {
+                    connection.Open();
+                    var reader = command.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        Console.WriteLine("OrderId\t{0} StoreId\t{1} ClientId\t{2} TypeId\t{3} Date\t{4} OrderType\t{5}",
+                            reader[0], reader[1], reader[2],reader[3],reader[4],reader[5]);
                     }
 
                     reader.Close();
